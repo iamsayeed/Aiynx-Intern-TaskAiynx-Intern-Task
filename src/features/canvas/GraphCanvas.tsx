@@ -22,7 +22,7 @@ export function GraphCanvas() {
     const selectedAppId = useStore((state) => state.selectedAppId);
     const { setSelectedNodeId } = useActions();
     const { data: graphData, isLoading } = useGraph(selectedAppId);
-    const { setNodes: setInstanceNodes, setEdges: setInstanceEdges } = useReactFlow();
+    const { } = useReactFlow();
 
     // Sync Graph Data
     useEffect(() => {
